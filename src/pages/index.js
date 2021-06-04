@@ -8,7 +8,8 @@ export default function Home({ data }) {
       <h1> {title} </h1>
       <p> {description} </p>
       <p> Hello world! </p>
-      <Link to="/blog">Read my posts.</Link>
+      <Link to="/blog"> Read my posts. </Link>
+      <Link to="/about"> About me </Link>
       <img alt="Cute cat" src={data.image.publicURL} />
     </div>
   )
