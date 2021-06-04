@@ -6,5 +6,26 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: "Gan's Dev Blog",
+    description: "Describe What I learned!"
+  },
+  plugins: [
+    /* image */
+    {
+      resolve: `gatsby-source-filesystem`,
+      options:{
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog/`,
+      },
+    },
+    `gatsby-transformer-remark`,
+  ],
 }
