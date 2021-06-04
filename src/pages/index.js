@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 export default function Home({ data }) {
   const { title, description } = data.site.siteMetadata
@@ -8,6 +8,7 @@ export default function Home({ data }) {
       <h1> {title} </h1>
       <p> {description} </p>
       <p> Hello world! </p>
+      <Link to="/blog">Read my posts.</Link>
       <img alt="Cute cat" src={data.image.publicURL} />
     </div>
   )
