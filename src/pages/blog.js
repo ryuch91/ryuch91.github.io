@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Layout from "../components/layout"
 
-export default function Blog({ data }){
+const BlogPage = ({ data }) => {
   const { posts } = data.blog
 
   return(
-    <div>
-      <h1>My blog posts</h1>
+    <Layout pageTitle="My Blog Posts">
 
       {posts.map(post=>(
         <article key={post.id}>
@@ -19,7 +19,7 @@ export default function Blog({ data }){
           <p>{post.excerpt}</p>
         </article>
       ))}
-    </div>
+    </Layout>
   )
 }
 
@@ -45,3 +45,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default BlogPage

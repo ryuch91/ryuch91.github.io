@@ -1,17 +1,16 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
+import Layout from "../components/layout"
 
-export default function Home({ data }) {
+const IndexPage = ({ data }) => {
   const { title, description } = data.site.siteMetadata
   return(
-    <div>
-      <h1> {title} </h1>
-      <p> {description} </p>
-      <p> Hello world! </p>
-      <Link to="/blog"> Read my posts. </Link>
-      <Link to="/about"> About me </Link>
-      <img alt="Cute cat" src={data.image.publicURL} />
-    </div>
+    <Layout pageTitle={title}>
+      <div>
+        <p> {description} </p>
+        <img alt="Cute cat" src={data.image.publicURL} />
+      </div>
+    </Layout>
   )
 }
 
@@ -33,3 +32,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default IndexPage
