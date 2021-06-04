@@ -8,7 +8,7 @@ const IndexPage = ({ data }) => {
     <Layout pageTitle={title}>
       <div>
         <p> {description} </p>
-        <img alt="Cute cat" src={data.image.publicURL} />
+        <img alt="Cloudy Sky" src={data.image.publicURL} />
       </div>
     </Layout>
   )
@@ -27,7 +27,7 @@ export const pageQuery = graphql`
       }
     }
 
-    image: file(base: {eq: "cute-cat.jpg" }) {
+    image: file(base: {eq: "cloudy-sky.jpg" }) {
       publicURL
     }
   }
