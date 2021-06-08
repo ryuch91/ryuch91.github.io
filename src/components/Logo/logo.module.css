@@ -1,0 +1,9 @@
+.logo-wrapper p{
+  margin : 0;
+  font-size : 1.6rem;
+}
+
+.logo-link {
+  display: block;
+  text-decoration: none;
+}
