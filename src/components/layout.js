@@ -1,19 +1,27 @@
 import React from "react"
+import styled from "styled-components"
 
 import Navbar from "./Navbar"
-import { 
-  container,
-  heading,
- } from "./layout.module.css"
+
+const MainContainer = styled.main`
+  margin: auto;
+  max-width: 500px;
+  font-family: sans-serif;
+`
+
+const StyledTitle = styled.title``
+const StyledHeading = styled.h1`
+  color: rebeccapurple;
+`
 
 const Layout = ({ pageTitle, children }) => {
   return(
-    <main className={container}>
-      <title> { pageTitle } </title>
+    <MainContainer>
+      <StyledTitle> { pageTitle } </StyledTitle>
       <Navbar />
-      <h1 className={heading}> { pageTitle } </h1>
+      <StyledHeading> { pageTitle } </StyledHeading>
       {children}
-    </main>
+    </MainContainer>
   )
 }
 

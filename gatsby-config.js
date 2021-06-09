@@ -8,7 +8,19 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Gan's Dev Blog",
-    description: "Describe What I learned!"
+    description: "Describe What I learned!",
+
+    /* Navigation Bar에 출력될 메뉴목록 */
+    menuLinks:[
+      {
+        name:'about',
+        link:'/about'
+      },
+      {
+        name:'posts',
+        link:'/posts'
+      }
+    ]
   },
   plugins: [
     /* image */
@@ -32,6 +44,9 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
+        remarkPlugins:[
+          require(`remark-images`),
+        ],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -50,5 +65,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    `styled-components`,
+    `babel-plugin-styled-components`,
   ],
 }
