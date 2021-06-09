@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[678],{7704:function(e,t,l){"use strict";l.r(t);var a=l(7294),r=l(2436);t.default=function(e){var t=e.data,l=t.site.siteMetadata,n=l.title,i=l.description;return a.createElement(r.Z,{pageTitle:n},a.createElement("div",null,a.createElement("p",null," ",i," "),a.createElement("img",{alt:"Cloudy Sky",src:t.image.publicURL})))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-e37dceacab7299f6da63.js.map

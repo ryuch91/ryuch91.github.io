@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[682],{5518:function(e,t,l){"use strict";l.r(t);var r=l(7294),a=l(5444),n=l(2436);t.default=function(){return r.createElement(n.Z,{pageTitle:"Who am I"},r.createElement("p",null," I'm the lazy developer~ "),r.createElement(a.rU,{to:"/"}," Back to home "))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-a51ce548b06a87651ab7.js.map
