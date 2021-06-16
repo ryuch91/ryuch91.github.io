@@ -13,11 +13,11 @@ module.exports = {
     /* Navigation Bar에 출력될 메뉴목록 */
     menuLinks:[
       {
-        name:'about',
+        name:'About',
         link:'/about'
       },
       {
-        name:'posts',
+        name:'Posts',
         link:'/posts'
       }
     ]

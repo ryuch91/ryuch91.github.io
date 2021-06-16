@@ -3,28 +3,26 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import LogoWord from "../../logo.mdx"
 
 const LogoWrapper = styled.div`
   margin: auto 0;
-  flex: 0 1 36px;
+  flex: 0 1 24px;
 
   @media (max-width: 768px) and (orientation: landscape){
-    flex: 0 1 25px;
+    flex: 0 1 16px;
   }
 `
 
 const LogoLink = styled(Link)`
   display: block;
   text-decoration: none;
+  font-size: 1.8rem;
 `
 
 const Logo = () => {
   return(
     <LogoWrapper>
-      <LogoLink to="/">
-        <LogoWord />
-      </LogoLink>
+      <LogoLink to="/"> GanDev </LogoLink>
     </LogoWrapper>
   )
 }

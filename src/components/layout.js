@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
-import Navbar from "./Navbar"
+import Header from "./Header"
 import Footer from "./Footer"
 
-//페이지 전체를 감싸는 div tag 컨테이너
+//페이지 전체를 감싸는 div tag 컨테이너 
 const PageContainer = styled.div`
   display: flex;
   margin: 0 auto;
@@ -16,6 +16,7 @@ const PageContainer = styled.div`
 const MainContainer = styled.main`
   flex: 1 0 auto;
   max-width: 750px;
+  margin-top: 5.4rem;
   padding: 0 1rem;
 `
 
@@ -23,7 +24,7 @@ const Layout = ({ pageTitle, children }) => {
   return(
     <PageContainer>
       <title> { pageTitle } </title>
-      <Navbar />
+      <Header />
       <MainContainer>
         {children}
         <Footer/>
