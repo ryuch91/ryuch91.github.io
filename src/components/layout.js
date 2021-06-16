@@ -2,26 +2,33 @@ import React from "react"
 import styled from "styled-components"
 
 import Navbar from "./Navbar"
+import Footer from "./Footer"
 
-const MainContainer = styled.main`
-  margin: auto;
-  max-width: 500px;
+//페이지 전체를 감싸는 div tag 컨테이너
+const PageContainer = styled.div`
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: sans-serif;
 `
-
-const StyledTitle = styled.title``
-const StyledHeading = styled.h1`
-  color: rebeccapurple;
+//페이지의 메인 컨텐츠를 감싸는 태그
+const MainContainer = styled.main`
+  flex: 1 0 auto;
+  max-width: 750px;
+  padding: 0 1rem;
 `
 
 const Layout = ({ pageTitle, children }) => {
   return(
-    <MainContainer>
-      <StyledTitle> { pageTitle } </StyledTitle>
+    <PageContainer>
+      <title> { pageTitle } </title>
       <Navbar />
-      <StyledHeading> { pageTitle } </StyledHeading>
-      {children}
-    </MainContainer>
+      <MainContainer>
+        {children}
+        <Footer/>
+      </MainContainer>
+    </PageContainer>
   )
 }
 
