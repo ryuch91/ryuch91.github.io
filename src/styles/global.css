@@ -1,0 +1,9 @@
+:root {
+  --red: #bb0000;
+  --blue: #0000bb;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
