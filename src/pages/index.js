@@ -1,15 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import styled from "styled-components"
+
+const ContentsWrapper = styled.div`
+  text-align: center;
+`
 
 const IndexPage = ({ data }) => {
   const { title, description } = data.site.siteMetadata
   return(
     <Layout pageTitle={title}>
-      <div>
-        <p> {description} </p>
+      <ContentsWrapper>
+        <h1> {description} </h1>
         <img alt="Cloudy Sky" src={data.image.publicURL} />
-      </div>
+      </ContentsWrapper>
     </Layout>
   )
 }
