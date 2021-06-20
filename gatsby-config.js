@@ -15,7 +15,7 @@ module.exports = {
     author:{
       name: 'Chungkwon Ryu',
       short: 'Software Engineer',
-      description: '게으른 개발자입니다. 그래도 기록하는 건 좋아합니다.',
+      description: '게으른 개발자입니다. 그래도 기록하는 건 좋아합니다. 오늘 배운 건 오늘 기록하는 습관을 들이려고 합니다.',
       bio: '',
       socials: [
         {

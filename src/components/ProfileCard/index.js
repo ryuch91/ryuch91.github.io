@@ -3,15 +3,18 @@ import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 
 import ProfileImage from "./ProfileImage"
+import SocialLinks from "../SocialLinks"
 
 const ProfileCardWrapper = styled.div`
   display: flex;
+  padding: 1rem;
 `
 
 const ProfileContentWrapper = styled.div`
   flex: 2;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 `
 
 const ProfileImgWrapper = styled.div`
@@ -58,6 +61,7 @@ const ProfileCard = () => {
         <ProfileTitle> {data.site.siteMetadata.author.name} </ProfileTitle>
         <ProfileSubtitle> {data.site.siteMetadata.author.short} </ProfileSubtitle>
         <ProfileDescription> {data.site.siteMetadata.author.description} </ProfileDescription>
+        <SocialLinks />
       </ProfileContentWrapper>
       <ProfileImgWrapper>
         <ProfileImage image={data.placeholderImage.childImageSharp.gatsbyImageData} altText="Monster" title="Monster" />
