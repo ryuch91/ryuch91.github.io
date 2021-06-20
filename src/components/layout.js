@@ -9,6 +9,7 @@ const PageContainer = styled.div`
   display: flex;
   margin: 0 auto;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
   font-family: sans-serif;
 `
