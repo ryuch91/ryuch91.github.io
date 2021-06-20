@@ -17,18 +17,21 @@ const HeaderWrapper = styled.header`
   z-index: 5;
   border-bottom: 1px solid;
   box-shadow: 0 0 0.4rem 0 black;
+  max-height: 80px;
 `
 
 /* Header의 위쪽 part */
 const MainHeader = styled.div`
   padding: 0.3rem;
   display: flex;
+  justify-content: center;
 `
 
 /* Header의 아래쪽 part */
 const SubHeader = styled.div`
   padding: 0.2rem;
   display: flex;
+  justify-content: center;
 `
 
 /* 전체 Navigation을 구성하는 각 Section들 */
@@ -46,6 +49,12 @@ const Header = () => {
           menuLinks{
             name
             link
+          }
+          author{
+            socials{
+              name
+              author
+            }
           }
         }
       }

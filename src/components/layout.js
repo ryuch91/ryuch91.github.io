@@ -27,8 +27,8 @@ const Layout = ({ pageTitle, children }) => {
       <Header />
       <MainContainer>
         {children}
-        <Footer/>
       </MainContainer>
+      <Footer/>
     </PageContainer>
   )
 }

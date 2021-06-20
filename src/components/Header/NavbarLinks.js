@@ -37,7 +37,7 @@ const NavbarLinks = ({ data }) => {
   return(
     <>
       {data.map((menu) => 
-        <NavItem to={menu.link}>
+        <NavItem to={menu.link} key={menu.name}>
           {menu.name}
         </NavItem>
       )}

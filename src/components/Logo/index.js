@@ -16,13 +16,15 @@ const LogoWrapper = styled.div`
 const LogoLink = styled(Link)`
   display: block;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
 `
 
 const Logo = () => {
   return(
     <LogoWrapper>
-      <LogoLink to="/"> GanDev </LogoLink>
+      <LogoLink to="/"> Gan's Devlog </LogoLink>
     </LogoWrapper>
   )
 }

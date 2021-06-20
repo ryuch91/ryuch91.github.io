@@ -10,6 +10,21 @@ module.exports = {
     title: "Gan's Dev Blog",
     description: "Describe What I learned!",
 
+    author:{
+      name: 'ChungkwonRyu',
+      bio: '',
+      socials: [
+        {
+          name:'email',
+          author:'ryuch91@gmail.com',
+        },
+        {
+          name:'github',
+          author:'ryuch91',
+        },
+      ],
+    },
+
     /* Navigation Bar에 출력될 메뉴목록 */
     menuLinks:[
       {
@@ -68,5 +83,13 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `styled-components`,
     `babel-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options:{
+        rule:{
+          include: /static/
+        }
+      }
+    }
   ],
 }
