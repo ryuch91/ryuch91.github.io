@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import {Link} from "gatsby"
 
 import SocialLinks from "../SocialLinks"
 
@@ -26,7 +25,7 @@ const FooterRightElement = styled.div`
   margin-left: auto;
 `
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   margin-left: 0.3rem;
 `
 
@@ -39,7 +38,7 @@ const Footer = () => {
       <FooterRightElement>
         © {new Date().getFullYear()}, Built with 
         {` `}
-        <StyledLink to="https://www.gatsbyjs.org">Gatsby</StyledLink>
+        <StyledLink href="https://www.gatsbyjs.org">Gatsby</StyledLink>
       </FooterRightElement>
     </FooterContainer>
   )
