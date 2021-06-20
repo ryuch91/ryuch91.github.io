@@ -1,8 +1,10 @@
 //import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
+import cx from "classnames"
 import { useStaticQuery, graphql } from "gatsby"
 
+import useWindowScrollDirection from "~hooks/useWindowScrollDirection"
 import NavbarLinks from "./NavbarLinks"
 import Logo from "../Logo"
 
@@ -18,6 +20,11 @@ const HeaderWrapper = styled.header`
   border-bottom: 1px solid;
   box-shadow: 0 0 0.4rem 0 black;
   max-height: 80px;
+  transition: top 0.6s ease;
+
+  &.hide {
+    top: -6rem;
+  }
 `
 
 /* Header의 위쪽 part */
@@ -60,9 +67,10 @@ const Header = () => {
       }
     }
   `)
-  
+
+  const { isUp } = useWindowScrollDirection()
   return(
-    <HeaderWrapper>
+    <HeaderWrapper className={cx({ 'hide' : !isUp })}>
       <MainHeader>
         <NavSection>
           <Logo/>

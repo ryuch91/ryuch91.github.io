@@ -38,6 +38,16 @@ module.exports = {
     ]
   },
   plugins: [
+    /* alias */
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          '~hooks': 'src/hooks',
+        },
+        extensions: []
+      },
+    },
     /* image */
     {
       resolve: `gatsby-source-filesystem`,
