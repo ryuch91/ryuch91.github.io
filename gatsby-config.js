@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 /**
  * Configure your Gatsby site with this file.
  *
@@ -11,7 +13,9 @@ module.exports = {
     description: "Describe What I learned!",
 
     author:{
-      name: 'ChungkwonRyu',
+      name: 'Chungkwon Ryu',
+      short: 'Software Engineer',
+      description: '게으른 개발자입니다. 그래도 기록하는 건 좋아합니다.',
       bio: '',
       socials: [
         {
@@ -89,7 +93,9 @@ module.exports = {
         ]
       },
     },
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
     `styled-components`,
     `babel-plugin-styled-components`,
