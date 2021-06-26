@@ -39,9 +39,20 @@ module.exports = {
         name:'Posts',
         link:'/posts'
       }
-    ]
+    ],
   },
   plugins: [
+    /* Roboto google font */
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto Mono`,
+          `Roboto`,
+        ],
+        display: 'swap',
+      },
+    },
     /* alias */
     {
       resolve: `gatsby-plugin-alias-imports`,
