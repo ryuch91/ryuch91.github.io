@@ -1,6 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+const CategoryPage = () => {
+  return(
+    
+  )
+}
+
 export default function BlogPost({ data }){
   const post = data.markdownRemark
 
