@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 import Header from "./Header"
 import Footer from "./Footer"
+import SideMenu from "./SideMenu"
 
 //페이지 전체를 감싸는 div tag 컨테이너 
 const PageContainer = styled.div`
@@ -27,6 +28,7 @@ const Layout = ({ pageTitle, children }) => {
       <title> { pageTitle } </title>
       <Header />
       <MainContainer>
+        <SideMenu/>
         {children}
       </MainContainer>
       <Footer/>

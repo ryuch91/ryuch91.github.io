@@ -6,6 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import useWindowScrollDirection from "~hooks/useWindowScrollDirection"
 import NavbarLinks from "./NavbarLinks"
+import Burger from "./Burger"
 import Logo from "../Logo"
 
 /* 전체 Header를 감싸는 wrapper */
@@ -41,6 +42,16 @@ const SubHeader = styled.div`
   justify-content: center;
 `
 
+const BurgerSection = styled.div`
+`
+
+const TitleSection = styled.div`
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+`
+
 /* 전체 Navigation을 구성하는 각 Section들 */
 const NavSection = styled.div`
   display: flex;
@@ -72,9 +83,12 @@ const Header = () => {
   return(
     <HeaderWrapper className={cx({ 'hide' : !isUp })}>
       <MainHeader>
-        <NavSection>
+        <BurgerSection>
+          <Burger />
+        </BurgerSection>
+        <TitleSection>
           <Logo/>
-        </NavSection>
+        </TitleSection>
       </MainHeader>
       <SubHeader>
         <NavSection>
